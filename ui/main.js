@@ -3,9 +3,8 @@
 		var dif=0;
 		var won;
 		var temparray=[];
-		function randomm() 												<!-- FUNCTION THAT SELECTS RANDOM CELLS TO PLACE BOMBS -->
-																							<!-- No of random cells is acells -->
-	{	
+		function randomm() 												
+		{	
 			
 			if(dif=="1")
 			{
@@ -13,8 +12,8 @@
 				{
 					for(var n=1;n<=5;n++)
 					{
-						items.push(""+m+"_"+n);												<!-- THIS CODE PUSHES ALL THE POSSIBLE VALUES OF MATRIX INDICES-->
-																							<!-- TO AN ARRAY CALLED items AS STRING-->
+						items.push(""+m+"_"+n);												
+																						
 					}
 					
 				}
