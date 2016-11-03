@@ -14,23 +14,23 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/bomb.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bomb.png'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/myflag.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'myflag.png'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/qmark.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'qmark.png'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/sad.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sad.jpeg'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/smiley.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'smiley.jpg'));
 });
 
