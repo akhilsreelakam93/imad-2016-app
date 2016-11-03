@@ -4,7 +4,7 @@
 <html>
 	<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 					<!-- TO FIT MOBILE DEVICES-->
-	<link href="/ui/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="mine.css">
 	</head>
 	<body oncontextmenu="return false;">
 	<form name="myform">
@@ -383,7 +383,7 @@
 					{	
 						for(var e=0;e<a.length;e++)
 						{	
-							document.getElementById("but"+a[e]).style.backgroundImage = "url('bomb.png')";
+							document.getElementById("but"+a[e]).style.backgroundImage = "url('/ui/bomb.png')";
 							document.getElementById("but"+a[e]).style.backgroundRepeat = "no-repeat";
 							
 						}	
@@ -399,7 +399,7 @@
 						{
 							document.getElementById(currentid).setAttribute("value",".");	
 							document.getElementById(currentid).style.paddingRight =  "22px";
-							document.getElementById(currentid).style.backgroundImage = "url('qmark.png')";
+							document.getElementById(currentid).style.backgroundImage = "url('/ui/qmark.png')";
 							document.getElementById(currentid).style.backgroundRepeat = "no-repeat";
 						}
 				}	
@@ -421,7 +421,7 @@
 						{
 							document.getElementById(currentid).setAttribute("value","");	
 							document.getElementById(currentid).style.paddingRight =  "26px";
-							document.getElementById(currentid).style.backgroundImage = "url('myflag.png')";
+							document.getElementById(currentid).style.backgroundImage = "url('/ui/myflag.png')";
 							document.getElementById(currentid).style.backgroundRepeat = "no-repeat";
 						}
 				}	
@@ -443,7 +443,7 @@
 		{	
 			document.getElementById("start").setAttribute("value","GAME OVER");
 			document.getElementById("start").setAttribute("class","butstyle");
-			document.getElementById("img1").src = "sad.jpeg";
+			document.getElementById("img1").src = "/ui/sad.jpeg";
 			var theImg=document.getElementById("img1");
 			theImg.style.visibility = 'visible';
 			document.getElementById("img1").style.marginLeft = "10px";
@@ -458,7 +458,7 @@
 				{
 					document.getElementById("start").setAttribute("value","CONGRATULATIONS, YOU WON");
 					document.getElementById("start").setAttribute("class","wonstyle");
-					document.getElementById("img").src = "smiley.jpg";
+					document.getElementById("img").src = "/ui/smiley.jpg";
 					var theImg=document.getElementById("img");
 					theImg.style.visibility = 'visible';
 					theImg.height = 60;
