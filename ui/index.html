@@ -6,8 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 					<!-- TO FIT MOBILE DEVICES-->
     <link href="/ui/style.css" rel="stylesheet" />
 	</head>
-	<body >
-	
+	<body>
+	<form name="myform">
+	<div id="maindiv">
+		<span style="font-size:20px;font-family:Broadway;color:grey;">Enter the difficulty level</span><select style="margin-left:30px;color:grey;font-size:15px;;font-family:Broadway;" name="difficulty" >
+		<option value="-1">Select</option>
+		<option value="1" selected> Amateur </option>
+		<option value="2" > Semi pro</option>
+		<option value="3" > Professional</option>
+		</select>
+		<img style="position:absolute;margin-left:135px;margin-top:31px;" src = "" id = "img"/>
+		<br><br>
+		<input class="initial" type="button" onClick="attain()" value="Start the game" id="start">
+		<img style="position:absolute;" src = "" id = "img1"/>
+		<br><br>
+		<div id="wrapper"></div>
+		<br><br>
+		
+		
+	</div>
+	</form>
     <script type="text/javascript" src="/ui/main.js">
     </script>
 
