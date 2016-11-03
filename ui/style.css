@@ -28,3 +28,8 @@
 				background-color:blue;
 				font-size:20px;
 			}
+.mystyle	{
+				margin: 0 auto;
+				text-align: left;
+				width: 400px;
+			}
