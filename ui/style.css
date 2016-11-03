@@ -1,0 +1,30 @@
+.butstyle	{
+				background-color:red;
+				font-size:35px;
+				border-radius:10px;
+	
+			}
+.commom		{ 	
+				background-color:blue;
+				font-size:20px;
+				border-radius:10px;
+				color:white
+	
+			}
+.boldclass	{	
+				font-weight: 700;
+				color:green;
+				
+			
+			}
+.wonstyle	{	
+				background-color:green;
+				font-size:35px;
+				color:white;
+				border-radius:10px;
+			}
+.initial	{ 	color:white;
+				border-radius:10px;
+				background-color:blue;
+				font-size:20px;
+			}
