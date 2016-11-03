@@ -19,22 +19,22 @@
 				}
 				for(var q=1;q<=5;q++)
 				{
-					x = items[Math.floor(Math.random()*items.length)];						<!-- THIS CODE SELECTS AN ELEMENT WHICH IS A SUBSET OF "items"-->
-					for(var b=q-1;b>=0;b--)													<!-- THIS LINE ENSURES NO RANDOM NUMBER IS REPEATED-->
+					x = items[Math.floor(Math.random()*items.length)];						 
+					for(var b=q-1;b>=0;b--)													
 						{
 							if(a[b]==x)
 							{
-								x = items[Math.floor(Math.random()*items.length)];			<!-- IF REPEATED ANOTHER RANDOM NUMBER IS SELECTED-->
-								b++;														<!-- j IS INCEREMENTED SO THAT PARTICULAR LOOP TRAVERSAL CANCLLD-->
+								x = items[Math.floor(Math.random()*items.length)];		
+								b++;														 
 							}
 						}
-					a.push(x);																<!-- THE INDICE IDs OF CELLS TO PLACE BOMBS ARE PUSHED TO ARR a -->
+					a.push(x);																
 				}
 				
 			}
 			else
-			if(dif=="2")										<!-- CONTINUE THE SAME CODE FOR ALL DIFFICULTY LEVELS-->
-																							<!-- ONLY THE NUMBER OF RANDOM CELLS TO PLACE BOMBS CHANGES -->
+			if(dif=="2")										
+																							
 			{
 				for(var o=1;o<=9;o++)
 				{
@@ -88,10 +88,10 @@
 			
 		changebuttoncolours(a);															
 		}
-		function attain()																				<!-- FUNCTION THAT CALLS create function-->
+		function attain()																		
 		{	a=[];
 			items=[];
-			won=0;																							<!-- CLEARS GAMEOVER LABEL IF ALREADY PLAYED-->
+			won=0;																							 
 			temparray=[];
 			var i1=document.getElementById("img");
 			var i2=document.getElementById("img1");
@@ -99,7 +99,7 @@
 			 i2.style.visibility = 'hidden';
 			document.getElementById("start").setAttribute("value","Restart the game");
 			document.getElementById("start").setAttribute("class","commom");
-			if(document.myform.difficulty.value=="-1")													<!-- CHOOSE NUMBER OF CELLS ACCDG TO DIFFICULTY-->
+			if(document.myform.difficulty.value=="-1")													
 			alert("Please select the difficulty level");
 			else
 			if(document.myform.difficulty.value=="1")
@@ -112,7 +112,7 @@
 			{dif=3;create(15,15);}
 			
 		}
-		function create(r,c)																			<!-- FN THAT CREATES MINSWEEPER TABLE-->
+		function create(r,c)																			 
 		{
 			var theader = '<table id="t1" border="1">\n';
 			var tbody = '';
@@ -136,22 +136,22 @@
 		{	
 			for ( var d=0; d<params.length; d++) 
 			{
-																								<!-- THE ID OF ALL CELLS WITH BOMBS IS CHANGED TO "bombid**"-->
-																								<!-- WHERE ** IS THE INDEX OF THE CELL-->
+																								 
+																							
 				document.getElementById("but"+params[d]).setAttribute("name","bombid"+params[d]);
 				
 			}
 			
 		}
-		function numberingcells(event,currentname,currentid) 										//NUMBER EACH CELLS WHEN LEFT CLICKED
-																									//THE NUMBER IS THE NUMBER OF ADJACENT CELLS WITH BOMBS
+		function numberingcells(event,currentname,currentid) 										
+																									
 		{ 	
 			
 			if(event.button=="0")
 			{		
 					
 					document.getElementById(currentid).style.backgroundImage = "url('')";
-					if(currentname.substring(0, 4)!="bomb")													//TO CHECK IF THE CELL WE CLICK IS BOMB
+					if(currentname.substring(0, 4)!="bomb")													
 					{	
 						checkwon();
 						document.getElementById(currentid).style.paddingRight =  "19px";																					//ALREADY CHANGED THE IDs OF CELLS WITH BOMB
