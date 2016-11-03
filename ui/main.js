@@ -3,9 +3,9 @@
 		var dif=0;
 		var won;
 		var temparray=[];
-		function randomm() 																	<!-- FUNCTION THAT SELECTS RANDOM CELLS TO PLACE BOMBS -->
-																							<!-- No of random cells is appx 1/3rd of total cells -->
-		{	
+		function randomm() 												<!-- FUNCTION THAT SELECTS RANDOM CELLS TO PLACE BOMBS -->
+																							<!-- No of random cells is acells -->
+	{	
 			
 			if(dif=="1")
 			{
