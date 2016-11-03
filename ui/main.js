@@ -1,4 +1,4 @@
 function attain()
 {
-alert("s");
+document.write("sss");
 }
