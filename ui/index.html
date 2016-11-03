@@ -158,8 +158,10 @@
 				tbody += '</tr>\n';
 				}
 			var tfooter = '</table>';
-			var tlastline='<br><br><div style="font-size:10px;font-family:Broadway;color:grey;font-weight:1200;">Developed by Akhil Sreelakam</div>'
-			document.getElementById('wrapper').innerHTML = theader + tbody + tfooter+tlastline;
+			var tfooter = '</table><br><br>';
+			var tdesc='<b>HOW TO PLAY</b><br><div style="font-size:12px;font-family:Monotype Corsiva;"><ul><li>The aim of minesweeper is to discover every cells without mines (bomb)</li><li>When clicked, each cell either displayes a number or a bomb</li><li>If you click a bomb, you lose the game</li><li>If clicking a cell shows a number, it means that there are that number of bombs in the adjacent cells around the cell you clicked</li><li>You can use these numbers as a hint to find the cells without bombs</li><li>You can also place a flag in any cell by right clicking or pressing button for a longer time</li><li>Flags are an indication you put yourself to show that that cell contains a bomb</li><li>You can also place a question mark on cells you are in doubt of (middle mouse button)</li><li>When clicking cell shows a grey grid, it means that none of the adjacent cells around it contains bomb. In that case, you can surely click on the adjacent cells of grey cells</li><li>You win the game as soon as you discover all non bomb cells</li><li>Happy playing</li></ul></div>'
+			var tlastline='<br><br><div style="font-size:10px;font-family:Broadway;color:grey;font-weight:1200;">Developed by Akhil Sreelakam<br>akhilsreelakam93@gmail.com</div>'
+			document.getElementById('wrapper').innerHTML = theader + tbody + tfooter+tdesc+tlastline;
 			randomm();
 		}
 		function changebuttoncolours(params) 
