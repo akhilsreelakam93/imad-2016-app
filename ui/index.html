@@ -279,7 +279,10 @@
 										sameid++;
 									}
 									if(sameid==1)
-									won++;
+									{
+									    won++;
+									    document.getElementById(currentid).disabled=true;
+									}
 									//alert("now updating "+won+" of "+currentid);
 							}
 							silversetoperations(currentid);
@@ -374,7 +377,8 @@
 						{	
 							document.getElementById(currentid).setAttribute("value",count);
 							document.getElementById(currentid).setAttribute("class","boldclass");
-							won++;//alert(won);
+							won++;
+							document.getElementById(currentid).disabled=true;
 						}
 
 					}
